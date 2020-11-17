@@ -9,41 +9,49 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="resources/stylesheet.css">
+
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-  <script src=""></script>
-  <script src="./resources/main.js"></script>
+ 
+  <script src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
 <body>
-<header class="container">
-    <nav class = "navbar navbar-expand-lg header navbar-light bg-light sticky-top justify-content-between pb-0 pt-0 header">
-      <a class= "navbar-brand p-0" ><h2> L4l1 </h2></a>
+<header class="container-fluid d-flex justify-content-center">
+    <nav class = "container navbar navbar-expand-lg header navbar-light bg-light sticky-top d-flex justify-content-between pb-0 pt-0 header">
+      <a class= "navbar-brand p-0" ><h2> Lali Micskei </h2></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
      
 
-      <div id="navbarNav" class = "collapse navbar-collapse justify-content-end text-right">
-        <a class = "p-3 nav-link" href="#portfolio"> Portfolio </a>
-        <a class = "p-3 nav-link" href="mailto:micskeil@gmail.com"> Contact me</a>
-        <a class = "p-3 nav-link" href="https://www.facebook.com/micskeil" target="blank">/fb</a>
-        <a class = "p-3 nav-link nav-icon" href="https://github.com/micskeil" target="blank"><img src ='resources/GitHub-Mark-32px.png'></a>
-      </div>  
+      <ul id="navbarNav" class = "collapse navbar-collapse justify-content-end nav-item text-right mb-0">
+        <li class = "p-0 pt-3 pb-3 nav-link">
+          <a class = "p-3" href="#portfolio"> Portfolio </a>
+        </li>
+        <li class = "p-0 pt-3 pb-3 nav-link"> 
+          <a class = "p-3" href="mailto:micskeil@gmail.com"> Hire me! </a>
+        </li>
+        <li class = "p-0 pt-3 pb-3 nav-link">
+          <a class = "p-3" href="https://www.facebook.com/micskeil"> /fb </a>
+        </li>
+        <li class = "p-0 pt-3 pb-3 nav-link"> 
+          <a class = "p-3 nav-icon" href="https://github.com/micskeil" target="blank"><img src ="resources/GitHub-Mark-32px.png"></a>
+        </li>
+      </ul>  
 
      
     </nav>
 </header>
 
-<div class = "container-fluid cover">
-  <div class = "creator">
-    <img src="./resources/micskeil.jpg">
-    <div> 
-      <h3>Lali Micskei</h3>
+<div id = "cover" class = "container-fluid cover ">
+  <div class = "container d-flex flax-wrap creator justify-content-center flex-wrap">
+    <img  class="m-3" src="./resources/micskeil.jpg">
+    <div class="d-flex flex-column p-3"> 
       <span> <img src="./resources/location_on-24px.svg"> Hungary, Budapest </span>
-      <span> <img src="./resources/phone-24px.svg"> +36 20 383 3528 </span>
-      <span> <img src="./resources/email-24px.svg"> micskeil@gmail.com </span>
+      <span> <img src="./resources/phone-24px.svg"> <a href="tel:+36203833528"> +36 20 383 3528</a> </span>
+      <span> <img src="./resources/email-24px.svg"> <a href="mailto:micskeil@gmail.com">micskeil@gmail.com </a></span>
       <span> <img src="./resources/child_friendly-24px.svg"> 28/07/1986 </span>
       <span> <img src="./resources/outlined_flag-24px.svg"> Hungarian </span>
       <span> <img src="./resources/supervised_user_circle-24px.svg"> Married </span>
@@ -57,24 +65,27 @@
     Looking for an entry-level position at a great company to learn and find my place as a developer long-term. 
   </div>
 </div>
-<!--
-<div id = 'close_cover' class = 'closing' onclick="closeCover()"><img src="./resources/keyboard_arrow_up-24px.svg"></div>
-<div id = 'open_cover' class = 'opening' onclick="openCover()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
-<div id = 'open_cv' class = 'closing' onclick="openCV()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
 
-<div id= 'cv_full' class='cv-full'>
-  <div class='cv-content'>
-    <div  class='cv-unit'>
+<control class = "control">
+  <div id = "close_cover" class = "closing cover-control d-flex justify-content-center p-3" onclick="closeCover()"><img src="./resources/keyboard_arrow_up-24px.svg"></div>
+  <div id = "open_cv" class = "opening d-flex justify-content-center p-3" onclick="openCV()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
+  <div id = "open_cover" class = "opening cover-control d-none justify-content-center p-3" onclick="openCover()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
+  <div id = "close_cv" class = "closing d-none justify-content-center p-3" onclick="closeCV()"><img src="./resources/keyboard_arrow_up-24px.svg"></div>
+</control>
+
+<div id= "cv_full" class="cv-full container-fluid d-none">
+  <div class="cv-content container d-flex pb-3">
+    <div  class="cv-unit">
       <h3>EDUCATION</h3>
       <p><strong>Economics, Bank and Investment, University of Debrecen</strong>
         <br>Subject areas: Bank and Investment, Accounting, Business Management.</p>
     </div>
 
-    <div id = 'cv_unit' class='cv-unit'>
+    <div id = "cv_unit" class="cv-unit">
       <h2>BRIEF WORK HISTORY</h2>
     </div>
 
-    <div id = 'cv_unit' class='cv-unit'>
+    <div id = "cv_unit" class="cv-unit">
       <h3>Runbnb / bnbnMore<br>(2014 - now)</h3>
       <p><strong>Operation</strong>
         <br>Running daily operation with a team up to 15 people. Organising maintenance, renovations,
@@ -84,38 +95,62 @@
         bnbnMore application with HTML, CSS3, JavaScript and PHP technologies. </p>
     </div>
 
-    <div class='cv-unit'>
+    <div class="cv-unit">
       <h3>Bankráció.hu<br>(2013 –2014)</h3>
       <p><strong>Development and publishing</strong>
         <br>Working on the application development. Implementing bank products in the company system.
       </p>
     </div>
 
-    <div class='cv-unit'>
+    <div class="cv-unit">
       <h3>Origo/ Portfolio.hu<br>(2011 –2015)</h3>
       <p><strong>Journalist</strong>
         <br>Publishing articles, editing, translating. Developing new products.</p>
     </div>
 
-    <div class='cv-unit'>
+    <div class="cv-unit">
       <h3>Budapest Bank<br>(2010 –2011)</h3>
       <p><strong>Analyst</strong>
         <br>Preparing KPIs for various departments about bank products. </p>
     </div>
   </div>
 </div>
--->
-<!-- <div id=iframe>
 
-<div id = 'skills_full '>
-  <div class = 'skill '>
-    <img src="./resources/HTML5.png">
-    <img src="./resources/css3.png">
-    <img src="./resources/js.png">
-        
+<div class = "container p-0 pt-3 d-flex flex-wrap portfolio">
+  <div class = "container row  p-0  m-0">
+    <div id ="portfolio_item1" class = " container col-md-6 d-block justify-content-center align-items-center p-0 portfolio-showcase">
+      <img src="resources/portfolio_item1.png">
+      
+    </div>
+
+    <div class = " col-md-6 p-3 portfolio-details">
+      <h3> FAQ accordion card </h3><br>
+      <p> Design and instruction available <a href ="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam">here</a>.<br><br>
+      Code can be viewed on <a href ="https://github.com/micskeil/faq-accordion-card-main">gitHub</a>. 
+      </p>
+      <a type="button" href="./portfolio/faq-accordion-card-main/index.html" class="btn btn-dark shadow border">Check it out live!</a>
+    </div>
   </div>
+
+  <div class = "container row  p-0 m-0">
+    <div class = "container col-md-6 p-3 portfolio-details text-right">
+      <h3> WP Theme for family business </h3><br>
+      <p> Our weeked house in Nagymaros needed a webpage where anyone can reach us and contact us. I am corrently working on a easy to use booking plugin what is able to syncronize with ical callendars like bnbnMore calendar. </a>.<br><br>
+      Code can be viewed on <a href ="https://github.com/micskeil/">gitHub</a>. 
+      </p>
+      <a type="button" href="./portfolio/faq-accordion-card-main/index.html" class="btn btn-dark shadow border">Check it out live!</a>
+    </div>
+    
+    <div class = " col-md-6 d-flex justify-content-center align-items-center p-0 portfolio-showcase ">
+      <img src="resources/portfolio_item2.png">
+    </div>
+  </div>
+
 </div>
 
--->
+
+<footer>
+  <div class= "countainer-fluid d-flex justify-content-center pt-3"> @ Lali Call me on:	&nbsp;  <a href="tel:+36203833528">+36 20 383 3528</a></div>
+</footer>
 </body>
 </html>

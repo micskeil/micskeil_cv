@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"  href="./style.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" type="text/css"  href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+
+  <title>micskeil | FAQ Accordion Card</title>
+
+</head>
+
+<body>
+  <div class = 'container-fluid fill d-flex justify-content-center align-items-center'>
+    <div class='container content'>
+      <div class='row faq-container shadow'>
+        <div class = 'illustration col-12 col-lg-6 p-0'>
+
+
+          <div class = 'illustration-mobile position-relative d-flex d-lg-none p-0'>
+            <div class = 'inside-bg '>
+              <img class = 'back position-absolute' src = 'images/bg-pattern-mobile.svg'>
+            </div> 
+            <div class = 'inside position-absolute '>
+              <img class ='' src = 'images/illustration-woman-online-mobile.svg'>
+            </div>  
+          </div>
+        
+          <div class = 'illustration-desktop position-relative d-none d-lg-flex align-items-center p-0'>
+            <div class = 'inside-bg position-absolute'>
+              <img class = 'back' src = 'images/bg-pattern-desktop.svg'>
+            </div> 
+            <img class = 'outside' src = 'images/illustration-box-desktop.svg'>
+            <div class = 'inside position-absolute'>
+              <img class ='' src = 'images/illustration-woman-online-desktop.svg'>
+            </div>  
+          </div>
+        
+        </div>
+
+        <div class = 'faq-list col-12 col-lg-6 p-0'>
+          <h1 class='font-weight-bold faq-sign d-inline-block ml-3 pl-3 pt-5 pb-3 pl-3'>FAQ</h1>
+         
+          <div class="accordion faq-accordion ml-3 pl-3 mr-3 pr-3" id="accordionExample">
+            <div class="card faq-card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header faq-card-header p-0 " id="headingOne">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   How many team members can I invite? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                </div>
+              </div>
+            </div>
+            <div class="card faq-card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header faq-card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the maximum file upload size? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
+              </div>
+            </div>
+            <div class="card faq-card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header faq-card-header p-0" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I reset my password? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+                </div>
+              </div>
+            </div>
+            <div class="card faq-card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header faq-card-header p-0" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Can I cancel my subscription? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </div>
+              </div>
+            </div>
+            <div class="card faq-card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header faq-card-header p-0" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Do you provide additional support? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coder row justify-content-center">
+        Coded by &nbsp;  <a href="#">micskeil</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
