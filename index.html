@@ -1,165 +1,501 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <html>
+  <head>
+    <title>Lali Micskei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <title>Lali Micskei</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
 
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
- 
-  <script src="./main.js"></script>
-  <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-</head>
-<body>
-<header class="container-fluid d-flex justify-content-center">
-    <nav class = "container navbar navbar-expand-lg header navbar-light bg-light sticky-top d-flex justify-content-between pb-0 pt-0 header">
-      <a class= "navbar-brand p-0" ><h2> Lali Micskei </h2></a>
+  <body>
+    <header
+      class="container-fluid bg-light d-flex justify-content-center sticky-top p-0"
+    >
+      <nav
+        class="container navbar navbar-expand-lg header navbar-light bg-light d-flex justify-content-between pb-0 pt-0"
+      >
+        <a class="navbar-brand p-0"
+          ><h3>
+            <p class="brand-letter">L</p>
+            <p class="brand-letter">a</p>
+            <p class="brand-letter">l</p>
+            <p class="brand-letter">i</p>
+            <p class="brand-letter">M</p>
+            <p class="brand-letter">i</p>
+            <p class="brand-letter">c</p>
+            <p class="brand-letter">s</p>
+            <p class="brand-letter">k</p>
+            <p class="brand-letter">e</p>
+            <p class="brand-letter">i</p>
+          </h3></a
+        >
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img class="p-1" src="./resources/down-arrow.png" />
+        </button>
 
-      <ul id="navbarNav" class = "collapse navbar-collapse justify-content-end nav-item text-right mb-0">
-        <li class = "p-0 pt-3 pb-3 nav-link">
-          <a class = "p-3" href="#portfolio"> Portfolio </a>
-        </li>
-        <li class = "p-0 pt-3 pb-3 nav-link"> 
-          <a class = "p-3" href="mailto:micskeil@gmail.com"> Hire me! </a>
-        </li>
-        <li class = "p-0 pt-3 pb-3 nav-link">
-          <a class = "p-3" href="https://www.facebook.com/micskeil"> /fb </a>
-        </li>
-        <li class = "p-0 pt-3 pb-3 nav-link"> 
-          <a class = "p-3 nav-icon" href="https://github.com/micskeil" target="blank"><img src ="resources/GitHub-Mark-32px.png"></a>
-        </li>
-      </ul>  
+        <ul
+          id="navbarNav"
+          class="collapse navbar-collapse justify-content-end nav-item text-right mb-0"
+        >
+          <li class="p-0 pt-3 pb-3 nav-link">
+            <a class="p-3" href="#portfolio"> Portfolio </a>
+          </li>
+          <li class="p-0 pt-3 pb-3 nav-link">
+            <a class="p-3" href="mailto:micskeil@gmail.com"> Hire me! </a>
+          </li>
+          <li class="p-0 pt-3 pb-3 nav-link">
+            <a class="p-3" href="https://www.facebook.com/micskeil"> /fb </a>
+          </li>
+          <li class="p-0 pt-3 pb-3 nav-link">
+            <a
+              class="p-3 nav-icon"
+              href="https://github.com/micskeil"
+              target="blank"
+              ><img src="resources/GitHub-Mark-32px.png"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-     
-    </nav>
-</header>
-
-<div id = "cover" class = "container-fluid cover ">
-  <div class = "container d-flex flax-wrap creator justify-content-center flex-wrap">
-    <img  class="m-3" src="./resources/micskeil.jpg">
-    <div class="d-flex flex-column p-3"> 
-      <span> <img src="./resources/location_on-24px.svg"> Hungary, Budapest </span>
-      <span> <img src="./resources/phone-24px.svg"> <a href="tel:+36203833528"> +36 20 383 3528</a> </span>
-      <span> <img src="./resources/email-24px.svg"> <a href="mailto:micskeil@gmail.com">micskeil@gmail.com </a></span>
-      <span> <img src="./resources/child_friendly-24px.svg"> 28/07/1986 </span>
-      <span> <img src="./resources/outlined_flag-24px.svg"> Hungarian </span>
-      <span> <img src="./resources/supervised_user_circle-24px.svg"> Married </span>
-    </div>
-  </div>
-  <div class="break"></div> 
-  <div class="container resume-text p-3 text-center">
-    》 Determined and productive developer who has the passion to find the best solution for any problem. Proficient in HTML, CSS, 
-    JavaScript, jQuery, SQL, SASS, Vue.js. Dedicated to learn additional technologies and  languages (currently enrolled in a React course). 
-    Created WordPress themes for our family business and participated in smaller web-development projects. 
-    Looking for an entry-level position at a great company to learn and find my place as a developer long-term. 
-  </div>
-</div>
-
-<control class = "control">
-  <div id = "close_cover" class = "closing cover-control d-flex justify-content-center p-3" onclick="closeCover()"><img src="./resources/keyboard_arrow_up-24px.svg"></div>
-  <div id = "open_cv" class = "opening d-flex justify-content-center p-3" onclick="openCV()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
-  <div id = "open_cover" class = "opening cover-control d-none justify-content-center p-3" onclick="openCover()"><img src="./resources/keyboard_arrow_down-24px.svg"></div>
-  <div id = "close_cv" class = "closing d-none justify-content-center p-3" onclick="closeCV()"><img src="./resources/keyboard_arrow_up-24px.svg"></div>
-</control>
-
-<div id= "cv_full" class="cv-full container-fluid d-none">
-  <div class="cv-content container d-flex pb-3">
-    <div  class="cv-unit">
-      <h3>EDUCATION</h3>
-      <p><strong>Economics, Bank and Investment, University of Debrecen</strong>
-        <br>Subject areas: Bank and Investment, Accounting, Business Management.</p>
-    </div>
-
-    <div id = "cv_unit" class="cv-unit">
-      <h2>BRIEF WORK HISTORY</h2>
-    </div>
-
-    <div id = "cv_unit" class="cv-unit">
-      <h3>Runbnb / bnbnMore<br>(2014 - now)</h3>
-      <p><strong>Operation</strong>
-        <br>Running daily operation with a team up to 15 people. Organising maintenance, renovations,
-        cleanings. Synchronizing different departments work. Creating reports and forecasts.<br>
-        <br><strong>Business and application development</strong>
-        <br>Recognizing business and market needs and developing IT or structural solutions. Developing the
-        bnbnMore application with HTML, CSS3, JavaScript and PHP technologies. </p>
-    </div>
-
-    <div class="cv-unit">
-      <h3>Bankráció.hu<br>(2013 –2014)</h3>
-      <p><strong>Development and publishing</strong>
-        <br>Working on the application development. Implementing bank products in the company system.
-      </p>
-    </div>
-
-    <div class="cv-unit">
-      <h3>Origo/ Portfolio.hu<br>(2011 –2015)</h3>
-      <p><strong>Journalist</strong>
-        <br>Publishing articles, editing, translating. Developing new products.</p>
-    </div>
-
-    <div class="cv-unit">
-      <h3>Budapest Bank<br>(2010 –2011)</h3>
-      <p><strong>Analyst</strong>
-        <br>Preparing KPIs for various departments about bank products. </p>
-    </div>
-  </div>
-</div>
-<div class = "conatainer-fluid d-flex justify-content-center">
-<h3 class="p-5">CHECK THIS OUT</h3>
-</div>
-
-<div id="portfolio" class = "container pt-1 d-flex flex-wrap justify-content-center portfolio">
-  <div class = "container row justify-content-center  m-0">
-
-    <div id ="portfolio_item" class = "container col-md-5 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow">
-      <img src="resources/portfolio_item1.png">
-      <div class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center">
-        <h3> FAQ accordion</h3><br>
-        <p> Design and instruction  <a href ="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam">here</a>.<br><br>
-        Code on <a href ="https://github.com/micskeil/faq-accordion-card-main">gitHub</a>. 
-        </p>
-        <a type="button" href="./portfolio/faq-accordion-card-main/index.html" class="btn btn-dark shadow border">Check it out live!</a>
+    <div id="cover" class="cover">
+      <div
+        class="creator container d-flex flex-nowrap justify-content-center pt-5 pb-3"
+      >
+        <img class="avatar ml-1" src="./resources/micskeil.jpg" />
+        <div class="personal-info d-flex flex-column">
+          <span>
+            <img class="icon" src="./resources/location_on-24px.svg" /> Hungary,
+            Budapest
+          </span>
+          <span>
+            <img class="icon" src="./resources/phone-24px.svg" />
+            <a href="tel:+36203833528"> +36 20 383 3528</a>
+          </span>
+          <span>
+            <img class="icon" src="./resources/email-24px.svg" />
+            <a href="mailto:micskeil@gmail.com">micskeil@gmail.com </a></span
+          >
+          <span>
+            <img class="icon" src="./resources/child_friendly-24px.svg" />
+            28/07/1986
+          </span>
+          <span>
+            <img class="icon" src="./resources/outlined_flag-24px.svg" />
+            Hungarian
+          </span>
+          <span>
+            <img
+              class="icon"
+              src="./resources/supervised_user_circle-24px.svg"
+            />
+            Married
+          </span>
+        </div>
       </div>
-    </div> 
+      <div class="break"></div>
+      <div class="container resume-text p-3 text-center">
+        》 Determined and productive developer who has the passion to find the
+        best solution for any problem. Proficient in
+        <p class="skill">HTML</p>
+        ,
 
-    <div id ="portfolio_item" class = "container col-md-5 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow">
-      <img src="resources/portfolio_item2.png">
-      <div class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center">
-        <h3> WP Theme</h3><br>
-        <p> WordPress Theme from scrach w Bootstrap.<br><br>
-        Code on <a href ="https://github.com/micskeil/">gitHub</a>. 
-        </p>
-        <a type="button" href="http://nagymarosimokuslak.hu" class="btn btn-dark shadow border">Check it out live!</a>
+        <p class="skill">JavaScript</p>
+        ,
+        <p class="skill">SQL</p>
+        ,
+        <p class="skill">SASS</p>
+        ,
+        <p class="skill">Vue.js</p>
+        . Dedicated to learning additional technologies and languages. My
+        current main project is a Vue.js application for fishermen. It's like
+        Instagram for fishermen. Created WordPress themes for our family
+        business and participated in smaller web-development projects. Looking
+        for an entry-level position at a great company to learn and find my
+        place as a developer long-term.
       </div>
-    </div> 
+    </div>
 
-    <div id ="portfolio_item" class = "container col-md-6 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow">
-      <img src="resources/portfolio_item3.png">
-      <div class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center">
-        <h3> Family Memory Game </h3><br>
-        <p> For my kid w jQuery.<br><br>
-        Code on <a href ="https://github.com/micskeil/FamilyMemon">gitHub</a>. 
-        </p>
-        <a type="button" href="./portfolio/memory-game/index.html" class="btn btn-dark shadow border">Check it out live!</a>
+    <div class="control">
+      <div
+        id="close_cover"
+        class="closing cover-control d-flex justify-content-center p-3"
+        onclick="closeCover()"
+      >
+        <img src="./resources/keyboard_arrow_up-24px.svg" />
+      </div>
+      <div
+        id="open_cover"
+        class="opening cover-control d-none justify-content-center p-3"
+        onclick="openCover()"
+      >
+        <img src="./resources/keyboard_arrow_down-24px.svg" />
       </div>
 
-    </div> 
-</div>
+      <div
+        id="open_cv"
+        class="opening d-flex justify-content-center p-3"
+        onclick="openCV()"
+      >
+        <img src="./resources/keyboard_arrow_down-24px.svg" />
+      </div>
 
+      <div
+        id="close_cv"
+        class="closing d-none justify-content-center p-3"
+        onclick="closeCV()"
+      >
+        <img src="./resources/keyboard_arrow_up-24px.svg" />
+      </div>
+    </div>
 
-<footer>
-  <div class= "countainer-fluid d-flex justify-content-center pt-3"> Call me on:	&nbsp;  <a href="tel:+36203833528">+36 20 383 3528</a></div>
-</footer>
-</body>
+    <div
+      id="cv_full"
+      class="cv-full container-fluid d-flex flex-column justify-items-center p-0"
+    >
+      <div class="cv-content d-flex flex-column align-items-center pb-3">
+        <div id="cv-head" class="cv-head">
+          <h2>BRIEF WORK HISTORY</h2>
+        </div>
+
+        <div id="cv_unit" class="cv-unit row pt-3">
+          <div class="cv-title col-md-4 col-12">
+            <h5>Pecazunk.hu <br />(2020 - now)</h5>
+          </div>
+          <div class="col-md-8 col-12">
+            <strong>Developer</strong> <br />With this project my main goal is
+            to create showcase of my skillset next to my CV. Pecazunk.hu is an
+            Instagram like application for fishermen. I hope with this
+            application lot of people will have a chance to share their
+            achievements with people who cares. Additionally, the users can have
+            access information what will help them to catch more fish.<br />
+            <br /><strong>Skills</strong> <br />During this project I used
+            Vue.js with all its advanced features like mixing and store
+            management. (Vuex), routing (Vue Router). I try to solve all other
+            technical challenges with vanilla JS. I created autocomplete input
+            fields, like module etc. Tested the componenets with Jest framework.
+          </div>
+        </div>
+
+        <div id="cv_unit" class="cv-unit row pt-3">
+          <div class="cv-title col-md-4 col-12">
+            <h5>Runbnb / bnbnMore <br />(2014 - now)</h5>
+          </div>
+
+          <div class="col-md-8 col-12">
+            <strong>Operation</strong> <br />Running daily operation with a team
+            up to 15 people. Organising maintenance, renovations, cleanings.
+            Synchronizing different departments work. Creating reports and
+            forecasts.<br />
+            <br /><strong>Business and application development</strong>
+            <br />Recognizing business and market needs and developing IT or
+            structural solutions. Developing the bnbnMore application with HTML,
+            CSS3, JavaScript and PHP technologies.
+          </div>
+        </div>
+
+        <div id="cv_unit" class="cv-unit row pt-3">
+          <div class="cv-title col-md-4 col-12">
+            <h5>Bankráció.hu<br />(2013 –2014)</h5>
+          </div>
+
+          <div class="col-md-8 col-12">
+            <strong>Development and publishing</strong> <br />Working on the
+            application development. Implementing bank products in the company
+            system.
+          </div>
+        </div>
+
+        <div id="cv_unit" class="cv-unit row pt-3">
+          <div class="cv-title col-md-4 col-12">
+            <h5>Origo/ Portfolio.hu<br />(2011 –2015)</h5>
+          </div>
+
+          <div class="col-md-8 col-12">
+            <strong>Journalist</strong> <br />Publishing articles, editing,
+            translating. Developing new products.
+          </div>
+        </div>
+
+        <div id="cv_unit" class="cv-unit row pt-3">
+          <div class="cv-title col-md-4 col-12">
+            <h5>Budapest Bank <br />(2010 –2011)</h5>
+          </div>
+
+          <div class="col-md-8 col-12">
+            <strong>Analyst</strong> <br />Preparing KPIs for various
+            departments about bank products.
+          </div>
+        </div>
+
+        <div id="cv-head" class="cv-head row pt-3">
+          <div id="cv_unit" class="cv-unit col-12 text-center">
+            <h2>EDUCATION</h2>
+          </div>
+          <div id="cv_unit" class="cv-unit col-12 text-center">
+            <strong>Msc Economics, University of Debrecen</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center">
+      <h3 class="p-5">PORTFOLIO</h3>
+    </div>
+
+    <div class="pecazunk container-fluid pb-3">
+      <div class="pecazunk-row row pt-3 pb-5">
+        <div class="pecazunk-left col-md-6 d-flex justify-content-end pt-5">
+          <img class="rotated border" src="./resources/pecazunk_1.jpg" />
+        </div>
+        <div class="pecazunk-right col-md-6 p-3">
+          <h3 class="pt-3 font-weight-bold">Pecázunk.hu</h3>
+
+          <div class="pb-3">a Vue.js app by Lali Micskei</div>
+          <div class="pb-3">
+            An
+            <p class="highlight">Instagram-like</p>
+            app for fishermen. <br />
+            Focused on logging the fishing activity and improving future catch
+            chance.
+          </div>
+
+          <div class="pb-3">
+            User can log in and
+            <p class="highlight">change profile details</p>
+            (email, display name, photo URL).<br />
+            Start fishing session, save location and weather details from
+            browser and public APIs.
+          </div>
+
+          <div class="pb-3">
+            Users
+            <p class="highlight">record catches</p>
+            with the fish species and size details, comment, weather
+            information.
+          </div>
+
+          <div class="pb-3">
+            Users share their posts with others on the timeline.<br />
+            Users can
+            <p class="highlight">like and comment</p>
+            the posts or save it in their bookmarks.<br />
+          </div>
+
+          <div class="pb-3">
+            Code on <a href="https://github.com/micskeil/catchlog"> gitHub </a>.
+          </div>
+
+          <a
+            type="button"
+            href="https://pecazunk.hu"
+            class="btn btn-light shadow border mt-3"
+            >Check it out live!</a
+          >
+        </div>
+      </div>
+
+      <div class="pecazunk-row row pt-3 pb-5">
+        <div class="pecazunk-left col-8 col-md-6 pl-1 text-right">
+          <h3 class="pt-3 font-weight-bold">Used technologies</h3>
+
+          <ul class="pt-3">
+            <li>
+              <p class="highlight mt-3">Vuex</p>
+              for user and session state management
+            </li>
+            <li>
+              <p class="highlight mt-3">Vue.js router</p>
+              for routing and better user experience
+            </li>
+            <li>
+              <p class="highlight mt-3">Bootsrap</p>
+              for fast design development
+            </li>
+            <li>
+              <p class="highlight mt-3">Firebase Auth and Store</p>
+              Vanilla JS for other functionality
+            </li>
+          </ul>
+
+          <div class="pt-3">
+            Code on <a href="https://github.com/micskeil/catchlog"> gitHub </a>.
+          </div>
+
+          <a
+            type="button"
+            href="https://pecazunk.hu"
+            class="btn btn-light shadow border mt-3"
+            >Check it out live!</a
+          >
+        </div>
+        <div class="pecazunk-right d-flex justify-content-start col-4 col-md-6">
+          <img class="mock" src="./resources/pecazunk_2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="portfolio"
+      class="container pt-1 d-flex flex-wrap justify-content-center portfolio"
+    >
+      <div class="container row justify-content-center m-0">
+        <div
+          id="portfolio_item"
+          class="container col-md-5 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow"
+        >
+          <img src="resources/portfolio_item1.png" />
+          <div
+            class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center"
+          >
+            <h3>FAQ accordion</h3>
+            <br />
+            <p>
+              Design and instruction
+              <a
+                href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam"
+                >here</a
+              >.<br /><br />
+              Code on
+              <a href="https://github.com/micskeil/faq-accordion-card-main"
+                >gitHub</a
+              >.
+            </p>
+            <a
+              type="button"
+              href="./portfolio/faq-accordion-card-main/index.html"
+              class="btn btn-dark shadow border"
+              >Check it out live!</a
+            >
+          </div>
+        </div>
+
+        <div
+          id="portfolio_item"
+          class="container col-md-5 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow"
+        >
+          <img src="resources/portfolio_item2.png" />
+          <div
+            class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center"
+          >
+            <h3>WP Theme</h3>
+            <br />
+            <p>
+              WordPress Theme from scrach w Bootstrap.<br /><br />
+              Code on <a href="https://github.com/micskeil/">gitHub</a>.
+            </p>
+            <a
+              type="button"
+              href="http://nagymarosimokuslak.hu"
+              class="btn btn-dark shadow border"
+              >Check it out live!</a
+            >
+          </div>
+        </div>
+
+        <div
+          id="portfolio_item"
+          class="container col-md-6 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow"
+        >
+          <img src="resources/portfolio_item3.png" />
+          <div
+            class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center"
+          >
+            <h3>Family Memory Game</h3>
+            <br />
+            <p>
+              For my kid w jQuery.<br /><br />
+              Code on
+              <a href="https://github.com/micskeil/FamilyMemon">gitHub</a>.
+            </p>
+            <a
+              type="button"
+              href="./portfolio/memory-game/index.html"
+              class="btn btn-dark shadow border"
+              >Check it out live!</a
+            >
+          </div>
+        </div>
+
+        <div
+          id="portfolio_item"
+          class="container col-md-5 col-lg-3 d-block justify-content-center align-items-center portfolio-showcase p-0 m-3 portfolio_item shadow"
+        >
+          <img src="resources/portfolio_item4.png" />
+          <div
+            class="project-discription p-3 text-center d-none flex-column align-items-center justify-content-center"
+          >
+            <h3>Testimonials Grid</h3>
+            <br />
+            <p>
+              Responsive grid site.<br /><br />
+              Code on
+              <a href="https://github.com/micskeil/Testimonials-Grid">gitHub</a
+              >.
+            </p>
+            <a
+              type="button"
+              href="./portfolio/testimonials-grid/index.html"
+              class="btn btn-dark shadow border"
+              >Check it out live!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div
+        class="container-fluid d-flex justify-content-center text-light bg-dark mt-3"
+      >
+        Call me on: &nbsp; <a href="tel:+36203833528">+36 20 383 3528</a>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <script src="./main.js"></script>
+    </footer>
+  </body>
 </html>
