@@ -54,10 +54,6 @@ $(document).ready(() => {
   });
 });
 
-console.log(
-  "Sorry for all this cheesy animation here, but I hope HR people like it. Please check out my Github page for my projects."
-);
-
 gsap.from(".brand-letter", {
   duration: 0.5,
   color: "white",
